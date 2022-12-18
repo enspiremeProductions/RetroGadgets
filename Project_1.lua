@@ -4,7 +4,7 @@
 --Discord: https://discord.gg/YnDfD9ZT
 --Youtube: https://www.youtube.com/@enspiremeproductions8499
 --Github: https://github.com/enspiremeProductions
---Pateron: patreon.com/user?u=84447962
+--Patreon: patreon.com/user?u=84447962
 
 --Programs Purpose: 
 --Input controlled counter displayed over a LED array and 2x-7segment display
