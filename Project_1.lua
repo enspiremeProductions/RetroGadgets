@@ -73,7 +73,7 @@ function displayLEDs(value:number)
 			led1.States[1] = false
 		end
 		for i = 1, value do
-            led0.States[i] = true						
+            led0.States[i] = true
         end
     end		
 	-- middle led strip case
@@ -84,23 +84,25 @@ function displayLEDs(value:number)
 	    end
 		for i = 1, value - 8 do
 			led1.States[i] = true
-		end													
+		end
 	end
 	-- rightmost led strip case
 	if value > 16 then
 		for i = 1,8 do
-			led2.States[i] = false				
+			led2.States[i] = false
 	end
 		for i = 1, value - 16 do
 			led2.States[i] = true
-		end		
-	end					
+		end
+	end			
 end
 
 function updateColor()
 	if resetBtn.ButtonDown then
 		for i = 1,8 do
-			led0.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)																					led1.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)																					led2.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)
+			led0.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)
+			led1.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)
+			led2.Colors[i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)
 			for k = 1,2 do
 				segDisp.Colors[k][i] = Color(Rsel.Value,Gsel.Value,Bsel.Value)
 			end
@@ -117,7 +119,7 @@ function updateCounter()
     if count < 0 then count = 0 end     --counter lower limit
     if count > maxLEDs then count = maxLEDs end   --counter upper limit
   --Function calls with new count  
-	bcdSplit(segDisp,count) --call to display on segment    
+	bcdSplit(segDisp,count) --call to display on segment
 	displayLEDs(count)
 end
 
