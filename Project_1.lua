@@ -1,10 +1,9 @@
 --12/17/2022
 --Aurthor: EnspireMe Productions
---Prior Contributors:  
---Twitch Video Tutorial: enspireme_retrogadgets
---Discord for comments/questions:
---Youtube Tutorial:
---Github Repository:
+--Twitch: https://www.twitch.tv/enspireme_retrogadgets
+--Discord: https://discord.gg/YnDfD9ZT
+--Youtube: https://www.youtube.com/@enspiremeproductions8499
+--Github: https://github.com/enspiremeProductions
 
 --Programs Purpose: 
 --Input controlled counter displayed over a LED array and 2x-7segment display
